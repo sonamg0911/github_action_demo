@@ -22,7 +22,7 @@ jobs:
         uses: dart-lang/setup-dart@9a04e6d73cca37bd455e0608d7e5092f881fd603
       - name: Install Flutter
         uses: subosito/flutter-action@v1
-      - name: Install dependencies
+      - name: Get dependencies
         run: flutter pub get
       # Uncomment this step to verify the use of 'dart format' on each commit.
       - name: Verify formatting
@@ -32,5 +32,5 @@ jobs:
         run: dart analyze
       - name: Run tests
         run: flutter test
-      - name: build apk
+      - name: Build apk
         run: flutter build apk
